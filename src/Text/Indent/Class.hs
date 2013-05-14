@@ -1,4 +1,4 @@
-module Indent.Class (
+module Text.Indent.Class (
       Indenter(..)
     , IndentMode(..)
     , Tagged

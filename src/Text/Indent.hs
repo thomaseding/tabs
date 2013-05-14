@@ -1,4 +1,4 @@
-module Indent (
+module Text.Indent (
       main
     ) where
 
@@ -6,11 +6,11 @@ module Indent (
 import Data.Char (isSpace, toLower)
 import Data.List (partition)
 import Data.Tagged
-import Indent.Class
-import Indent.Type.CodeGen
 import System.Environment (getArgs)
 import System.FilePath (takeExtension)
 import System.IO
+import Text.Indent.Class
+import Text.Indent.Type.CodeGen
 
 
 main :: IO ()
