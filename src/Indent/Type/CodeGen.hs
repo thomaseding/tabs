@@ -26,8 +26,11 @@ initState = St {
 
 
 instance Indenter CodeGen where
-    indent = Tagged . unlines . flip evalState initState . mapM (tabify . dropWs) . lines
+    indent mode = Tagged . unlines . flip evalState initState . mapM (tabify . wsOp) . lines
         where
+            wsOp = case mode of
+                DropOldTabs -> dropWs
+                KeepOldTabs -> id
             tabify str = do
                 n <- tabAmount str
                 return $ replicate n '\t' ++ str

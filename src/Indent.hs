@@ -63,7 +63,7 @@ type Indent a = String -> Tagged a String
 
 runIndent :: IndentType -> String -> String
 runIndent indentType = case indentType of
-    HcCodeGen -> untag . (indent :: Indent CodeGen)
+    HcCodeGen -> untag . (indent DropOldTabs :: Indent CodeGen)
 
 
 

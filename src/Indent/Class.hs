@@ -1,5 +1,6 @@
 module Indent.Class (
       Indenter(..)
+    , IndentMode(..)
     , Tagged
     ) where
 
@@ -7,7 +8,10 @@ module Indent.Class (
 import Data.Tagged
 
 
+data IndentMode = DropOldTabs | KeepOldTabs
+
+
 class Indenter a where
-    indent :: String -> Tagged a String
+    indent :: IndentMode -> String -> Tagged a String
 
 
