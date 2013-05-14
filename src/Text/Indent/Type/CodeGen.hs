@@ -32,7 +32,7 @@ instance Indenter CodeGen where
                 DropOldTabs -> dropWs
                 KeepOldTabs -> id
             tabify str = do
-                n <- tabAmount str
+                n <- tabAmount $ dropWs str
                 return $ replicate n '\t' ++ str
 
 
