@@ -9,8 +9,7 @@ import Data.Tagged
 import System.Environment (getArgs)
 import System.FilePath (takeExtension)
 import System.IO
-import Text.Indent.Class
-import Text.Indent.Type.CodeGen
+import Text.Indent
 
 
 main :: IO ()

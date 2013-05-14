@@ -3,10 +3,10 @@ module Main (
     ) where
 
 
-import qualified Text.Indent
+import qualified Tabs
 
 
 main :: IO ()
-main = Text.Indent.main
+main = Tabs.main
 
 

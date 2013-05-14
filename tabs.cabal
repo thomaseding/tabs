@@ -25,6 +25,7 @@ library
     hs-source-dirs:
         src
     exposed-modules:
+        Text.Indent
         Text.Indent.Class
         Text.Indent.Type.CodeGen
 
@@ -41,6 +42,7 @@ executable tabs
         src
     other-modules:
         Tabs
+        Text.Indent
         Text.Indent.Class
         Text.Indent.Type.CodeGen
 
