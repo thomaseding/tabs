@@ -1,6 +1,6 @@
 module Tabs (
-      main
-    ) where
+    main
+) where
 
 
 import Data.Char (isSpace, toLower)
