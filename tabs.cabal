@@ -17,11 +17,7 @@ cabal-version:       >=1.8
 
 library
     build-depends:
-        base >=4,
-        tagged ==0.7.*,
-        monadlist ==0.0.*,
-        mtl ==2.1.*,
-        filepath ==1.3.*
+        base >=4.10 && <4.11, tagged >=0.8 && <0.9, filepath >=1.4 && <1.5, monadlist >=0.0 && <0.1, mtl >=2.2 && <2.3
     hs-source-dirs:
         src
     exposed-modules:
@@ -33,11 +29,7 @@ executable tabs
     main-is:
         Main.hs
     build-depends:
-        base >=4,
-        tagged ==0.7.*,
-        monadlist ==0.0.*,
-        mtl ==2.1.*,
-        filepath ==1.3.*
+        base >=4.10 && <4.11, tagged >=0.8 && <0.9, filepath >=1.4 && <1.5, monadlist >=0.0 && <0.1, mtl >=2.2 && <2.3
     hs-source-dirs:
         src
     other-modules:
