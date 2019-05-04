@@ -3,7 +3,7 @@ module Tabs (
 ) where
 
 
-import Data.Char (isSpace, toLower)
+import Data.Char (toLower)
 import Data.List (partition)
 import Data.Tagged
 import System.Environment (getArgs)

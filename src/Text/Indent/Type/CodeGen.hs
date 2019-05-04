@@ -6,8 +6,6 @@ module Text.Indent.Type.CodeGen (
 ) where
 
 
-import Control.Arrow
-import Control.Monad.ListM
 import Control.Monad.State.Strict
 import Data.Char
 import Data.List
